@@ -1,17 +1,17 @@
-
+!/bin/bash
 clear
-read -p "Enter Module Name : " v
+# read -p "Enter Module Name : " v
 
-mkdir -p $v
+mkdir -p $1
 
-mkdir -p $v/services
-echo > $v/services/${v}_service.dart
+mkdir -p $1/services
+echo > $1/services/${1}_service.dart
 
-mkdir -p $v/screens
-echo > $v/screens/${v}_screen.dart
+mkdir -p $1/screens
+echo > $1/screens/${v}_screen.dart
 
-mkdir -p $v/stores
-echo > $v/stores/${v}_store.dart
+mkdir -p $1/stores
+echo > $1/stores/${1}_store.dart
 
-mkdir -p $v/models
-echo > $v/models/${v}_model.dart
+mkdir -p $1/models
+echo > $1/models/${1}_model.dart
