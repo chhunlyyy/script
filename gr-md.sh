@@ -1,5 +1,4 @@
 #!/bin/bash
-
 clear
 read -p "Enter Module Name : " v
 
