@@ -4,7 +4,7 @@ directory=$1;
 mkdir -p "$directory";
 
 mkdir -p "$directory"/services;
-echo > "$directory"/services/"$directory"_service.dart;
+echo  > "$directory"/services/"$directory"_service.dart;
 
 mkdir -p "$directory"/screens;
 echo > "$directory"/screens/"$directory"_screen.dart;
