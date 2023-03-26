@@ -1,15 +1,16 @@
 #!/bin/bash
-clear
-mkdir -p $1
 
-mkdir -p $1/services
-echo > $1/services/abc_service.dart
+directory=$1;
+mkdir -p "$directory";
 
-mkdir -p $1/screens
-echo > $1/screens/abc_screen.dart
+mkdir -p "$directory"/services;
+echo > "$directory"/services/"$directory"_service.dart;
 
-mkdir -p $1/stores
-echo > $1/stores/abc_store.dart
+mkdir -p "$directory"/screens;
+echo > "$directory"/screens/"$directory"_screen.dart;
 
-mkdir -p $1/models
-echo > $1/models/abc_model.dart
+mkdir -p "$directory"/stores;
+echo > "$directory"/stores/"$directory"_store.dart;
+
+mkdir -p "$directory"/models;
+echo > "$directory"/models/"$directory"_model.dart;
